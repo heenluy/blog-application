@@ -1,0 +1,29 @@
+<div class="container">
+
+        <h2>Novo Artigo</h2>
+
+        <form>
+            <mat-form-field class="fild" appearance="fill">
+                <input matInput placeholder="Título" type="text"
+                 name="name" [(ngModel)]="post.name">
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width fild" appearance="fill">
+                <mat-label>Escreva o seu artigo</mat-label>
+                <textarea matInput placeholder="Ex. It makes me feel..."
+                name="message" [(ngModel)]="post.message"></textarea>
+            </mat-form-field>
+
+            <div class="btn-container">
+                <button mat-raised-button class="btn" (click)="publicar()">
+                    Publicar
+                </button>
+                    
+                <button mat-raised-button class="btn" (click)="cancel()">
+                    Cancelar
+                </button>
+            </div>
+    
+        </form>
+    
+</div>

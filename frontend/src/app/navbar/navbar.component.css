@@ -1,0 +1,51 @@
+.toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8d5fd3;
+    background-color: hsl(0, 0%, 90%);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.toolbar .menu {
+    background-color: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar .btn {
+    position: absolute;
+    right: 25px;
+}
+
+.menu .logo {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #8d5fd3;
+}
+
+.toolbar .btn button {
+    border-width: 2px;
+    border-color: #8d5fd3;
+    border-style: solid;
+    padding: 4px 22px;
+    background-color: initial;
+    color: #8d5fd3;
+    
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.toolbar .btn button:hover {
+    background-color: #8d5fd3;
+    color: #f0f0f0;
+}

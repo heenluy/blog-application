@@ -1,0 +1,95 @@
+.container {
+    color: #191919;
+    background-color: #f0f0f0;
+
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.maior {
+    width: 50%;
+    height: 100%;
+
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.maior .recentes {
+    position: static;
+
+    align-self: flex-start;
+
+    min-width: 350px;
+    max-width: 600px;
+
+    background-color: initial;
+    color: #191919;
+
+    border: none;
+    border-radius: 0;
+    outline: none;
+    /*box-shadow: none;*/
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.maior .recentes:hover {
+    background-color: rgba(178, 95, 211, 0.137);
+}
+
+.container .maior .pesquisar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 200px;
+    height: 32px;
+}
+
+.container .maior .pesquisar .caixa-de-pesquisa {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #191919;
+    background-color: initial;
+    color: #191919;
+    padding: 5px 0px;
+    text-align: start;
+}
+
+.container .maior .pesquisar button {
+    outline: none;
+    border-width: 1px;
+    border-color: #191919;
+    border-style: solid;
+    padding: 3px 10px;
+    background-color: initial;
+    color: #191919;
+
+    align-self: flex-end;
+    
+
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.container .maior .pesquisar button:hover {
+    color: #f0f0f0;
+    background-color: #191919;
+}

@@ -1,0 +1,33 @@
+<div class="container">
+
+    <h2>Atualizar</h2>
+
+    <form *ngIf="post">
+        <mat-form-field class="fild" appearance="fill">
+            <input matInput placeholder="Título" type="text"
+             name="name" [(ngModel)]="post.name">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width fild" appearance="fill">
+            <mat-label>Escreva o seu artigo</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."
+            name="message" [(ngModel)]="post.message"></textarea>
+        </mat-form-field>
+
+        <div class="btn-container">
+            <button mat-raised-button class="btn" (click)="atualizar()">
+                Salvar
+            </button>
+                
+            <button mat-raised-button class="btn-delete" (click)="deletar()">
+                Deletar
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+<i class="material-icons voltar" (click)="voltar()" title="voltar">
+keyboard_return
+</i>

@@ -1,0 +1,42 @@
+<div class="banner">
+    <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível<br> de uma página quando estiver examinando sua diagramação.</p>
+    
+    <div class="btns">
+        <a routerLink="/contact">Contate-nos</a>
+        <button class="btn-2" routerLink="/feed">Artigos</button>
+    </div>
+   
+</div>
+
+<div class="cont-manager" #recentes>
+
+    <div class="maior">
+
+        <h2>Recentes</h2>
+
+        <mat-card class="recentes">
+            <mat-card-title>Blogger</mat-card-title>
+            <mat-card-content>
+                <p>Aqui eu vou deixar um "manual" de como usar o blogger.</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="recentes" *ngFor="let post of posts" routerLink="/feed">
+            <mat-card-title>{{ post.name }}</mat-card-title>
+            <mat-card-content>
+                {{ post.message }}
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="menor">
+        <div class="menor-cont">
+            <div class="perfil"></div>
+            <h3>Administrador</h3>
+            <span>Sed ut perspiciatis unde omnis iste natus error<br> sit voluptatem accusantium doloremque laudantium.</span>
+            <button routerLink="/contact">Contato</button>
+        </div>
+    </div>
+
+
+</div>

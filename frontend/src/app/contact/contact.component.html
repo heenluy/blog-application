@@ -1,0 +1,28 @@
+<div class="container">
+
+        <h2>Contato</h2>
+
+        <form>
+            <mat-form-field class="fild" appearance="fill">
+                <input matInput placeholder="Email" type="text"
+                 name="titulo">
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width fild" appearance="fill">
+                <mat-label>Deixe um comentário</mat-label>
+                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field>
+
+            <div class="btn-container">
+                <button mat-raised-button class="btn">
+                    Enviar
+                </button>
+                    
+                <button mat-raised-button class="btn" (click)="cancel()">
+                    Cancelar
+                </button>
+            </div>
+    
+        </form>
+    
+</div>

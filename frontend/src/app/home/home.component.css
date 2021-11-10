@@ -1,0 +1,176 @@
+.banner {
+    width: 100%;
+    height: 460px;
+    background-image: url(/assets/banner.png);
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.banner p {
+    color: #f0f0f0;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.banner .btns button {
+    border-width: 2px;
+    border-color: #f0f0f0;
+    border-style: solid;
+    padding: 4px 22px;
+    background-color: initial;
+    color: #f0f0f0;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.banner .btns .btn-2 {
+    background-color: #f0f0f0;
+    color: #191919;
+}
+
+.banner .btns .btn-2:hover {
+    color: #8d5fd3;
+}
+
+.banner .btns a {
+    border-width: 2px;
+    border-color: #f0f0f0;
+    border-style: solid;
+    padding: 4px 22px;
+    background-color: initial;
+    color: #f0f0f0;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.banner .btns a:hover {
+    color: #8d5fd3;
+    background-color: #f0f0f0;
+}
+
+.cont-manager {
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+    justify-content: center;
+}
+
+.cont-manager .maior {
+    width: 60%;
+    background-color: #f0f0f0;
+
+    padding: 25px;
+    margin-left: 25px;
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+.maior h2 {
+    color: #f0f0f0;
+    background-color: #8d5fd3;
+    font-size: 1rem;
+    padding: 4px 22px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    /*align-self: center;*/
+
+}
+
+.maior .recentes {
+    position: static;
+
+    background-color: initial;
+    color: #191919;
+
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #747474;
+    cursor: pointer;
+}
+
+.cont-manager .menor {
+    width: 40%;
+    background-color: #f0f0f0;
+    padding: 50px;
+
+    font-family: 'Montserrat';
+    color: #191919;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menor-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+}
+
+.menor-cont .perfil {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    background-image: url(/assets/perfil.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+
+}
+
+.menor-cont h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: #191919;
+}
+
+.menor-cont button {
+    margin-top: 10px;
+    border-width: 2px;
+    border-color: #191919;
+    border-style: solid;
+    padding: 4px 22px;
+    background-color: initial;
+    color: #191919;
+    
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.menor-cont button:hover {
+    color: #f0f0f0;
+    background-color: #191919;
+}

@@ -1,0 +1,19 @@
+
+<div class="container">
+
+    <div class="maior">
+
+        <div class="pesquisar">
+            <input type="text" class="caixa-de-pesquisa" placeholder="pesquisar..">
+            <button (click)="pesquisar()">Buscar</button>
+        </div>
+
+        <mat-card class="recentes" *ngFor="let post of posts" 
+        routerLink="/atualizar/{{post.id}}" title="Você pode editar ou excluir.">
+            <mat-card-title>{{ post.name }}</mat-card-title>
+            <mat-card-content>
+                {{ post.message }}
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
